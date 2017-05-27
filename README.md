@@ -3,11 +3,11 @@
 
 # Question 1 (Naked Twins)
 Q: How do we use constraint propagation to solve the naked twins problem?  
-A: *Student should provide answer here*
+A: After the search space is reduced by elimination and only choice, I used naked twins technique on the values (see line 128). The strategy for eliminating naked twins I followed is: Iterate through all units (i.e. the rows, columns and squares), and calculate the occurences of values of length two (e.g. '23') in that unit. For the values which appears twice (are naked twins as I'm only checking the values of length two), remove those digits from the entire unit except the twins. 
 
 # Question 2 (Diagonal Sudoku)
 Q: How do we use constraint propagation to solve the diagonal sudoku problem?  
-A: *Student should provide answer here*
+A: Till now, we were imposing constraints on only three types of units - rows, columns and squares. I added both the main diagonals in the unitlist. See line 175 till 178.
 
 ### Install
 
